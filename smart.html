@@ -45,18 +45,18 @@
       <h2>智能船舶能力地图</h2>
       <p>共 11 个知识点。点击卡片，下方展开详细说明。</p>
     </div>
-    <div class="grid-3" data-select="#smart-detail">
-      <div class="card clickable" data-lesson="S1"><h3>1. 感知</h3><p>船知道自己的状态</p></div>
-      <div class="card clickable" data-lesson="S2"><h3>2. 连接</h3><p>设备能互相「说话」</p></div>
-      <div class="card clickable" data-lesson="S3"><h3>3. 分析</h3><p>识别异常与趋势</p></div>
-      <div class="card clickable" data-lesson="S4"><h3>4. 预测性维护</h3><p>提前安排而非抢修</p></div>
-      <div class="card clickable" data-lesson="S5"><h3>5. 航线航速优化</h3><p>节油与准时平衡</p></div>
-      <div class="card clickable" data-lesson="S6"><h3>6. 智能配载</h3><p>强度 · 稳性 · 作业</p></div>
-      <div class="card clickable" data-lesson="S7"><h3>7. 智能船桥</h3><p>辅助驾驶为主</p></div>
-      <div class="card clickable" data-lesson="S8"><h3>8. 靠泊与动力定位</h3><p>精准机动</p></div>
-      <div class="card clickable" data-lesson="S9"><h3>9. 船岸协同</h3><p>远程分析与离线能力</p></div>
-      <div class="card clickable" data-lesson="S10"><h3>10. 船舶网络安全</h3><p>工控安全底座</p></div>
-      <div class="card clickable" data-lesson="S11"><h3>11. 数字孪生</h3><p>预测与决策，而非展示</p></div>
+    <div class="smart-tabs" data-select="#smart-detail">
+      <div class="card clickable" data-lesson="S1"><h3>感知</h3><p>设备和环境数据</p></div>
+      <div class="card clickable" data-lesson="S2"><h3>连接</h3><p>船内外数据互通</p></div>
+      <div class="card clickable" data-lesson="S3"><h3>分析</h3><p>识别趋势与异常</p></div>
+      <div class="card clickable" data-lesson="S4"><h3>预测维护</h3><p>提前安排检修</p></div>
+      <div class="card clickable" data-lesson="S5"><h3>航行优化</h3><p>速度与油耗平衡</p></div>
+      <div class="card clickable" data-lesson="S6"><h3>智能配载</h3><p>强度、稳性与效率</p></div>
+      <div class="card clickable" data-lesson="S7"><h3>智能船桥</h3><p>辅助驾驶决策</p></div>
+      <div class="card clickable" data-lesson="S8"><h3>精准靠泊</h3><p>推进器协同控制</p></div>
+      <div class="card clickable" data-lesson="S9"><h3>船岸协同</h3><p>远程分析与自治</p></div>
+      <div class="card clickable" data-lesson="S10"><h3>网络安全</h3><p>控制系统防护</p></div>
+      <div class="card clickable" data-lesson="S11"><h3>数字孪生</h3><p>运营状态的数字分身</p></div>
     </div>
     <div class="lesson-pane" id="smart-detail"></div>
   </section>
@@ -114,16 +114,17 @@
       <p>未来网络安全会成为船舶设计、建造和运营的基础要求，需要在交付前纳入整体方案。难点在于：船上设备寿命长达十几年甚至几十年，无法像普通电脑一样频繁打补丁；还需适应卫星链路、多供应商接入和船级社认证，并在不影响安全航行的前提下做加固。</p>
     </div>
     <div id="S11">
-      <h3>11. 数字孪生</h3>
-      <p>数字孪生将设计数据、设备参数、传感器数据、维修记录、航行数据和环境数据结合起来。一个成熟的船舶数字孪生系统应该能够回答：</p>
+      <h3>11. 数字孪生：给真实船舶建立一份会更新的数字档案</h3>
+      <p>数字孪生可以理解为一艘真实船舶的“数字分身”。它以设计图纸和设备清单为基础，持续接收主机、发电机、推进器、货舱、导航设备和环境传感器的数据，再叠加航行记录、维修历史、故障案例和船级社要求。</p>
+      <p>这份数字档案会随着船舶运行不断更新。工程师查看的内容不只是三维外观，还包括设备当前工况、历史趋势、异常原因、维修记录和未来风险。设计、建造、交付和运营阶段的数据因此能够接续起来，减少“交船后重新建档”的信息断层。</p>
+      <h4>它能解决哪些具体问题</h4>
       <ul>
-        <li>当前船舶处于什么状态？</li>
-        <li>当前油耗是否正常？</li>
-        <li>某个设备还能运行多久？</li>
-        <li>如果更换燃料或调整速度，会有什么影响？</li>
-        <li>这次维修是否真正改善了设备状态？</li>
+        <li><strong>设备健康：</strong>比较当前温度、振动、油耗与正常基线，发现逐渐恶化的设备。</li>
+        <li><strong>维修安排：</strong>结合故障概率、备件库存和下一次靠港时间，安排更合适的维修窗口。</li>
+        <li><strong>航行优化：</strong>评估航速、吃水、风浪和船体状态对油耗和到港时间的影响。</li>
+        <li><strong>方案验证：</strong>在虚拟模型中比较换燃料、改推进器或升级设备的成本、风险和收益。</li>
       </ul>
-      <p>若三维界面很炫，却无法支撑预测、诊断与改造模拟，则仍停留在展示层。</p>
+      <p>数字孪生的核心价值在于让数据参与诊断、预测和决策。只有把模型与真实运行数据、维修结果和工程规则持续校准，系统才能成为船员、工程师和船东的工作工具。</p>
     </div>
   </div>
 
