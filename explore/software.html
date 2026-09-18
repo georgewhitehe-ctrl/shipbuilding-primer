@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>软件与规则 · 互动探索</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/explore.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">船舶<em>探索</em></a>
+      <a class="chip" href="index.html">首页</a>
+      <a class="chip" href="ship.html">船舶与产业</a>
+      <a class="chip" href="software.html">软件与规则</a>
+      <a class="chip" href="challenges.html">卡点与政策</a>
+      <a class="chip" href="smart.html">智能与绿色</a>
+      <a class="chip" href="market.html">供应商与空白</a>
+      <a class="chip" href="future.html">人才·未来</a>
+    </div>
+    <div class="progress"><i></i></div>
+  </nav>
+
+  <header class="page-hero wrap">
+    <div class="eyebrow">02 · 软件与规则</div>
+    <h1>六层软件像地层，点哪层读哪层</h1>
+    <p class="lead">从设计到数字孪生共六层；同时船舶必须符合 IMO 与船级社规则，否则难获保险、融资与国际运营资格。</p>
+  </header>
+
+  <section class="section wrap">
+    <div class="section-head reveal"><h2>船舶软件六层</h2><p>左侧点选，右侧展开；越往下越靠近运营与数据闭环。</p></div>
+    <div class="panel layers reveal" data-layers>
+      <div class="layer-stack">
+        <button class="layer-tab active" data-layer="1">① 船舶设计</button>
+        <button class="layer-tab" data-layer="2">② 生产设计</button>
+        <button class="layer-tab" data-layer="3">③ PLM / ERP / MES</button>
+        <button class="layer-tab" data-layer="4">④ 船上自动化</button>
+        <button class="layer-tab" data-layer="5">⑤ 船队运营</button>
+        <button class="layer-tab" data-layer="6">⑥ 数字孪生与绿色</button>
+      </div>
+      <div>
+        <div class="prose" data-layer-panel="1">
+          <svg viewBox="0 0 420 90" class="illus" style="margin-bottom:0.8rem;border-radius:12px;background:#0c2a36">
+            <rect x="20" y="30" width="80" height="40" rx="6" fill="#3ecfbe" opacity="0.8"/>
+            <rect x="120" y="20" width="80" height="50" rx="6" fill="#1f8a7c"/>
+            <rect x="220" y="25" width="80" height="45" rx="6" fill="#b8923f" opacity="0.85"/>
+            <rect x="320" y="35" width="80" height="35" rx="6" fill="#7eb8c9"/>
+            <text x="60" y="55" text-anchor="middle" fill="#073" font-size="11">线型</text>
+            <text x="160" y="50" text-anchor="middle" fill="#fff" font-size="11">稳性</text>
+            <text x="260" y="52" text-anchor="middle" fill="#fff" font-size="11">结构</text>
+            <text x="360" y="57" text-anchor="middle" fill="#073" font-size="11">管路</text>
+          </svg>
+          <h3>设计软件回答：浮不浮、稳不稳、跑多快、耗多少油</h3>
+          <p>涵盖船体建模、线型、静水力、稳性、阻力推进、耐波性、结构强度、疲劳寿命、设备布置与管路。常见工具包括 NAPA、Maxsurf、AVEVA Marine、Cadmatic、FORAN、ShipConstructor、CATIA、NX；仿真侧有 ANSYS、Simcenter、STAR-CCM+、Altair、OpenFOAM 等。</p>
+          <div class="chip-row"><span class="mini">NAPA</span><span class="mini">AVEVA</span><span class="mini">ANSYS</span><span class="mini">STAR-CCM+</span></div>
+        </div>
+        <div class="prose" data-layer-panel="2" hidden>
+          <h3>生产设计：把图纸变成可执行任务</h3>
+          <p>确定钢板切割、分段制造、管路安装、焊缝、吊装、电缆敷设与工序安排。做得不好会出现管子碰撞、无法安装、板材利用率低与返工。国内船厂现场经验强，但各厂系统标准与接口往往不统一。</p>
+        </div>
+        <div class="prose" data-layer-panel="3" hidden>
+          <h3>PLM · ERP · MES</h3>
+          <p><strong>PLM</strong> 管图纸、模型、物料、版本与变更；<strong>ERP</strong> 管合同、财务、采购、库存；<strong>MES</strong> 管工序、进度、质量与报工。理想情况是设计变更自动传到采购与现场；现实中常有多套编码、图实不一致。</p>
+        </div>
+        <div class="prose" data-layer-panel="4" hidden>
+          <h3>船上自动化 = 神经系统</h3>
+          <p>实时采集传感器，监控主机、发电机、配电、泵阀、舵机、推进、液货与安全设备。大型船需要冗余、故障隔离、应急模式与网络安全；客户更看重可靠性与入级案例。</p>
+        </div>
+        <div class="prose" data-layer-panel="5" hidden>
+          <h3>航运与船队运营</h3>
+          <p>处理船期、航线、配载、船员、维修、备件、油耗、碳排放与合规。船东越来越需要实时掌握油耗、机况、航速效率、维修风险与预计到港时间。</p>
+        </div>
+        <div class="prose" data-layer-panel="6" hidden>
+          <h3>数字孪生 · 智能 · 绿色</h3>
+          <p>把设计模型、传感器、维修、航行与环境数据合起来：模拟工况、预测故障、优化航线航速、估算排放、分析新燃料风险，支撑船岸协同。若只剩三维展示，价值有限。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="section-head reveal"><h2>理想 vs 现实</h2></div>
+    <div class="compare reveal">
+      <div class="side a">
+        <h4>理想贯通</h4>
+        <p style="color:var(--muted);margin:0;font-size:0.92rem">设计变更自动传到采购、生产、质量与现场；一物一码；图模与现场一致；跨企业可交换结构化数据。</p>
+      </div>
+      <div class="side b">
+        <h4>常见割裂</h4>
+        <p style="color:var(--muted);margin:0;font-size:0.92rem">CAD/PLM/ERP/MES 多供应商；编码与接口不统一；变更难追踪。即便国际大厂，跨平台无缝连接仍困难。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="section-head reveal"><h2>船级社与国际规则</h2></div>
+    <div class="panel reveal" data-tabs>
+      <div class="tabs">
+        <button class="tab active" data-tab="imo">IMO 与公约</button>
+        <button class="tab" data-tab="class">船级社做什么</button>
+        <button class="tab" data-tab="list">主要船级社</button>
+      </div>
+      <div class="prose" data-panel="imo">
+        <p>IMO 制定全球海上安全、环保、人员培训与防污染规则。重点记住 <strong>SOLAS</strong>（海上人命安全）与 <strong>MARPOL</strong>（防污染）。碳排放与区域规则正把合规变成贯穿运营期的持续成本。</p>
+      </div>
+      <div class="prose" data-panel="class" hidden>
+        <p>船级社审核船体结构、稳性、消防、救生、主机、电气、自动化、材料、焊接、新燃料与网络安全等。没有证书，通常很难获得保险、融资与国际运营资格。</p>
+      </div>
+      <div class="prose" data-panel="list" hidden>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>船级社</th><th>简称</th><th>记住什么</th></tr></thead>
+            <tbody>
+              <tr><td>中国船级社</td><td>CCS</td><td>国内入级常见</td></tr>
+              <tr><td>挪威船级社</td><td>DNV</td><td>规则 / 数据 / 绿色议题活跃</td></tr>
+              <tr><td>美国船级社</td><td>ABS</td><td>美洲与部分海工</td></tr>
+              <tr><td>英国劳氏</td><td>LR</td><td>合规认证体系成熟</td></tr>
+              <tr><td>法国船级社</td><td>BV</td><td>欧洲与特种领域</td></tr>
+              <tr><td>日本海事协会</td><td>ClassNK</td><td>东亚航运造船联系密</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap pager">
+    <a href="ship.html"><b>上一页</b>← 船舶与产业</a>
+    <a href="challenges.html"><b>下一页</b>卡点与政策 →</a>
+  </div>
+  <footer class="site wrap">互动探索版 · 软件与规则</footer>
+  <script src="js/explore.js"></script>
+</body>
+</html>

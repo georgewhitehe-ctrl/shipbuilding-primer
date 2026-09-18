@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>软件与规则 · 从零认识船舶行业</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-software">
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">船舶<span>全景</span></a>
+      <a class="chip" href="index.html">首页</a>
+      <a class="chip" href="ship.html">船舶与产业</a>
+      <a class="chip" href="software.html">软件与规则</a>
+      <a class="chip" href="challenges.html">卡点与政策</a>
+      <a class="chip" href="smart.html">智能与绿色</a>
+      <a class="chip" href="market.html">供应商与空白</a>
+      <a class="chip" href="future.html">人才·未来</a>
+    </div>
+  </nav>
+
+  <header class="page-hero wrap">
+    <div class="eyebrow">02 · 软件与规则</div>
+    <h1>从设计软件到船级社规则</h1>
+    <p class="lead">船舶从设计到运营，软件可理解为六层；同时船舶不能只按船厂自己的标准建造，还必须符合 IMO 与船级社规则。左侧切换主题阅读详细说明。</p>
+    <div class="subnav">
+      <a href="#layers">软件六层</a>
+      <a href="#plm">系统协同难题</a>
+      <a href="#rules">船级社与法规</a>
+    </div>
+  </header>
+
+  <section class="section wrap" id="layers">
+    <div class="section-head">
+      <h2>船舶软件六层</h2>
+      <p>每一层回答不同问题。理想情况是数据贯通；现实中许多船厂仍存在系统割裂。</p>
+    </div>
+    <div class="media-banner"><img src="assets/ship-plan.jpeg" alt="船舶设计图纸" /><div class="media-caption"><div class="kicker">从图纸到数字孪生</div><h3>软件把工程经验变成可复用的数据</h3><p>图纸、模型、规则和生产任务共同构成船舶的数字底座。</p></div></div>
+    <div class="panel layers" data-layers>
+      <div class="layer-tabs">
+        <button class="layer-tab active" data-layer="1">1. 船舶设计</button>
+        <button class="layer-tab" data-layer="2">2. 生产设计</button>
+        <button class="layer-tab" data-layer="3">3. PLM / ERP / MES</button>
+        <button class="layer-tab" data-layer="4">4. 船上自动化</button>
+        <button class="layer-tab" data-layer="5">5. 船队运营</button>
+        <button class="layer-tab" data-layer="6">6. 数字孪生与绿色</button>
+      </div>
+      <div>
+        <div class="prose" data-layer-panel="1">
+          <h3>1. 船舶设计软件</h3>
+          <p>设计软件负责回答：「这艘船能不能浮？稳不稳？跑得快不快？耗油多不多？」它包括船体建模、线型设计、静水力计算、稳性计算、阻力与推进性能分析、耐波性分析、结构强度计算、疲劳寿命分析、设备布置和管路设计等。</p>
+          <p>常见国外软件包括 <strong>NAPA、Maxsurf、AVEVA Marine、Cadmatic、FORAN、ShipConstructor、CATIA 和 Siemens NX</strong>。仿真分析方面常见 <strong>ANSYS、Siemens Simcenter、STAR-CCM+、Altair 和 OpenFOAM</strong> 等。</p>
+          <p>国外软件通常拥有数十年的模型库、材料库、规则库、验证案例和全球客户反馈。国内普通船舶设计能力已较强，但在大型复杂船舶、豪华邮轮、深海装备和高端海工领域，参数化设计、多专业协同、全生命周期管理与设计可靠性仍需加强。</p>
+          <div class="tag-cloud">
+            <span class="tag soft">NAPA</span><span class="tag soft">AVEVA</span><span class="tag soft">Cadmatic</span>
+            <span class="tag soft">CATIA / NX</span><span class="tag">ANSYS</span><span class="tag">STAR-CCM+</span>
+          </div>
+        </div>
+        <div class="prose" data-layer-panel="2" hidden>
+          <h3>2. 生产设计软件</h3>
+          <p>生产设计负责把「设计图纸」转换成船厂能够执行的制造任务。它要确定钢板如何切割、分段如何制造、管路如何安装、焊缝如何布置、设备如何吊装、电缆如何敷设，以及不同工序怎样安排。</p>
+          <p>生产设计做得不好，现场就会出现<strong>管子碰撞、设备无法安装、钢板利用率低和返工严重</strong>等问题。国内船厂拥有很强的现场经验，但不同船厂往往使用各自开发的系统，标准、接口和数据模型不统一，会造成设计重复、变更难追踪、现场信息反馈慢和不同企业之间难以协同。</p>
+          <div class="callout">生产设计是「图纸世界」与「车间世界」的桥梁。数字主线能不能打通，很大程度取决于这一层。</div>
+        </div>
+        <div class="prose" data-layer-panel="3" hidden>
+          <h3>3. PLM、ERP 和 MES 系统</h3>
+          <p><strong>PLM</strong> 负责管理船舶全生命周期的产品数据，例如图纸、模型、物料、技术文件、版本和设计变更。<strong>ERP</strong> 负责合同、财务、采购、库存、成本和供应商管理。<strong>MES</strong> 负责车间和现场执行，例如工序任务、生产进度、人员、设备、质量和报工。</p>
+          <p>理想情况下，这三类系统应该连接起来：设计变更能够自动传递到采购、生产、质量和现场。但现实中许多船厂存在系统割裂，同一设备可能有多个编码，设计图和现场状态也可能不一致。</p>
+          <p>市场真正需要的是一种船舶数字主线：设计师修改一个设备或管路后，采购清单、生产工艺、安装任务、质量文件、备件资料和后续维修记录能够自动同步更新。</p>
+        </div>
+        <div class="prose" data-layer-panel="4" hidden>
+          <h3>4. 船上自动化和控制软件</h3>
+          <p>船上自动化软件相当于船舶的「神经系统」，用于监控主机、发电机、配电、泵阀、舵机、推进器、液货系统和安全设备。它需要实时采集传感器数据，在异常发生时报警，并按照控制逻辑调节设备。</p>
+          <p>大型船舶通常还需要<strong>冗余控制、故障隔离、应急模式和网络安全设计</strong>。在大型船舶综合自动化、动力定位、电力推进、船桥集成、实时控制器和高可靠冗余系统方面，国外企业积累更深。这类系统必须长时间稳定运行，还要通过严格认证，替换成本很高，因此客户通常更看重可靠性和历史案例，而不仅仅是采购价格。</p>
+        </div>
+        <div class="prose" data-layer-panel="5" hidden>
+          <h3>5. 航运和船队运营软件</h3>
+          <p>船队管理软件服务船东和运营公司，主要处理船期、航线、配载、船员、维修、备件、油耗、碳排放和法规合规。</p>
+          <p>这类软件越来越依赖实时数据。船东希望知道每艘船当前的油耗、发动机状态、航速效率、维修风险和预计到港时间。运营软件的价值，往往体现在「少停一天航、少烧一吨油、少交一笔合规罚金」这类可量化结果上。</p>
+        </div>
+        <div class="prose" data-layer-panel="6" hidden>
+          <h3>6. 数字孪生、智能船舶和绿色航运软件</h3>
+          <p>新一代软件会将设计模型、传感器数据、维修记录、航行数据和环境数据结合起来，形成船舶数字孪生。它可以用来模拟船舶不同工况，预测设备故障，优化航线和速度，估算碳排放，分析新燃料风险，并支持船岸协同。</p>
+          <p>需要注意：很多数字孪生项目拥有漂亮的三维界面，但三维模型和真实设备数据、维修记录、运行模型之间没有完全联动。真正有价值的数字孪生应该能够支持预测、诊断、模拟改造方案和运营决策，而不仅仅是展示船舶外观和设备位置。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="plm">
+    <div class="section-head">
+      <h2>为什么「系统连起来」这么难</h2>
+    </div>
+    <div class="inline-pair"><figure class="inline-media"><img src="assets/digital-design.jpeg" alt="数字化船舶设计" /><figcaption>数字模型让设计、生产和现场拥有共同的产品语言。</figcaption></figure><figure class="inline-media"><img src="assets/exploded-vessel.jpeg" alt="船舶结构示意" /><figcaption>复杂船舶需要管理大量设备、舱室、管路和接口关系。</figcaption></figure></div>
+    <div class="grid-2">
+      <div class="card prose">
+        <h3>理想状态</h3>
+        <p>设计变更自动传递到采购、生产、质量与现场；同一设备一个编码；图模与现场状态一致；跨企业也能交换结构化数据。</p>
+      </div>
+      <div class="bot-card">
+        <h3>常见现实</h3>
+        <ul>
+          <li>CAD / PLM / ERP / MES 来自不同供应商</li>
+          <li>数据编码、版本体系与接口协议不统一</li>
+          <li>设计图与现场状态脱节，变更难追踪</li>
+          <li>即使国际大厂，跨平台无缝连接仍然困难</li>
+        </ul>
+      </div>
+    </div>
+    <div class="panel prose mt">
+      <p>即使是大型国际供应商，也很难让设计软件、仿真软件、船厂生产系统、船上控制系统和船队运营平台完全无缝连接。船东和船厂经常需要依靠系统集成商进行数据转换，因此<strong>跨平台、跨品牌、跨生命周期的数据协同仍然是全球性空白</strong>。</p>
+    </div>
+  </section>
+
+  <section class="section wrap" id="rules">
+    <div class="section-head">
+      <h2>船级社和国际规则</h2>
+      <p>船舶不能只按照船厂自己的标准建造。没有船级社证书，船舶通常很难获得保险、融资和国际运营资格。</p>
+    </div>
+    <div class="panel prose mb" data-tabs>
+      <div class="tabs">
+        <button class="tab active" data-tab="imo">IMO 与公约</button>
+        <button class="tab" data-tab="class">船级社做什么</button>
+        <button class="tab" data-tab="list">主要船级社</button>
+      </div>
+      <div data-panel="imo">
+        <h3>国际海事组织（IMO）</h3>
+        <p>IMO 主要制定全球海上安全、环保、人员培训和防污染规则。重要法规包括：</p>
+        <ul>
+          <li><strong>SOLAS《国际海上人命安全公约》</strong>：结构、消防、救生、导航、应急等安全底线。</li>
+          <li><strong>MARPOL《国际防止船舶污染公约》</strong>：油污、化学品、生活污水、垃圾与大气排放等。</li>
+        </ul>
+        <p>此外，人员培训（如 STCW）、碳排放与能效规则、FuelEU Maritime、区域碳市场等，正在把「合规」从一次性取证变成贯穿运营期的持续成本与决策变量。</p>
+      </div>
+      <div data-panel="class" hidden>
+        <h3>船级社审核什么</h3>
+        <p>船级社会审核船体结构、稳性、消防、救生、主机、电气、自动化、材料、焊接、新燃料和网络安全等内容。它既是技术标准的解释者与执行者，也是保险、融资与国际航行信任链中的关键一环。</p>
+        <p>对软件与自动化供应商而言，通过船级社认证往往比「功能演示成功」更关键：客户替换成本高，更愿意选择有长期入级案例的产品。</p>
+      </div>
+      <div data-panel="list" hidden>
+        <h3>主要船级社</h3>
+        <ul>
+          <li><strong>CCS</strong> 中国船级社</li>
+          <li><strong>DNV</strong> 挪威船级社（规则、数据与绿色航运影响大）</li>
+          <li><strong>ABS</strong> 美国船级社</li>
+          <li><strong>LR</strong> 英国劳氏船级社</li>
+          <li><strong>BV</strong> 法国船级社</li>
+          <li><strong>ClassNK</strong> 日本海事协会</li>
+        </ul>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>船级社</th><th>简称</th><th>学习时记住什么</th></tr></thead>
+        <tbody>
+          <tr><td>中国船级社</td><td>CCS</td><td>国内入级与本土项目常见</td></tr>
+          <tr><td>挪威船级社</td><td>DNV</td><td>规则、数据服务、绿色与数字议题活跃</td></tr>
+          <tr><td>美国船级社</td><td>ABS</td><td>美洲市场与部分海工关联</td></tr>
+          <tr><td>英国劳氏</td><td>LR</td><td>历史悠久，合规认证体系成熟</td></tr>
+          <tr><td>法国船级社</td><td>BV</td><td>欧洲与特种领域常见</td></tr>
+          <tr><td>日本海事协会</td><td>ClassNK</td><td>东亚航运造船联系密切</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="wrap pager">
+    <a href="ship.html"><b>上一页</b>← 船舶与产业</a>
+    <a href="challenges.html"><b>下一页</b>卡点与政策 →</a>
+  </div>
+  <script src="js/site.js"></script>
+</body>
+</html>

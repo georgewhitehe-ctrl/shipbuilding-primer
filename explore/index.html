@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>船舶全景 · 互动探索版</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/explore.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">船舶<em>探索</em></a>
+      <a class="chip" href="index.html">首页</a>
+      <a class="chip" href="ship.html">船舶与产业</a>
+      <a class="chip" href="software.html">软件与规则</a>
+      <a class="chip" href="challenges.html">卡点与政策</a>
+      <a class="chip" href="smart.html">智能与绿色</a>
+      <a class="chip" href="market.html">供应商与空白</a>
+      <a class="chip" href="future.html">人才·未来</a>
+    </div>
+    <div class="progress"><i></i></div>
+  </nav>
+
+  <header class="hero wrap">
+    <div class="hero-stage">
+      <div>
+        <div class="eyebrow">INTERACTIVE EDITION <span class="badge-new">新版</span></div>
+        <h1>点进去，把船舶行业摸清楚</h1>
+        <p class="lead">同一套全景知识，换成可点、可切换、可对照的交互形态。船身热点、产业链步进、软件分层、燃料成熟度……边看边操作。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="ship.html">开始探索 →</a>
+          <a class="btn btn-ghost" href="smart.html">先看智能与绿色</a>
+        </div>
+        <div class="stat-row reveal">
+          <div class="stat"><b>6</b><span>主题航线</span></div>
+          <div class="stat"><b>点选</b><span>图文联动</span></div>
+          <div class="stat"><b>对照</b><span>国内外空白</span></div>
+          <div class="stat"><b>18</b><span>潜力方向</span></div>
+        </div>
+        <p class="old-link">静态精读版仍在：<a href="../index.html">http://127.0.0.1:8765/</a></p>
+      </div>
+
+      <div class="viz-frame reveal">
+        <div class="viz-label">点击船身热点 · 预览互动</div>
+        <svg class="illus" viewBox="0 0 520 300" role="img" aria-label="互动船舶示意" data-select="#home-lesson">
+          <defs>
+            <linearGradient id="hull" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#3ecfbe"/>
+              <stop offset="100%" stop-color="#145264"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="260" cy="250" rx="200" ry="18" fill="rgba(62,207,190,0.15)"/>
+          <path d="M60 190 C120 150, 160 140, 250 138 L400 138 C450 138, 480 160, 490 190 L470 210 C400 225, 140 225, 80 210 Z" fill="url(#hull)" opacity="0.95"/>
+          <rect x="180" y="95" width="120" height="45" rx="6" fill="#0c2a36"/>
+          <rect x="210" y="70" width="55" height="28" rx="4" fill="#0c2a36"/>
+          <rect x="320" y="110" width="70" height="28" rx="4" fill="#0f3d4a"/>
+          <circle class="hotspot hotspot-dot" data-lesson="H1" cx="150" cy="175" r="6"/>
+          <circle class="hotspot hotspot-dot" data-lesson="H2" cx="260" cy="165" r="6"/>
+          <circle class="hotspot hotspot-dot" data-lesson="H3" cx="360" cy="170" r="6"/>
+          <circle class="hotspot hotspot-dot" data-lesson="H4" cx="235" cy="110" r="6"/>
+          <text x="150" y="198" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="11">船体</text>
+          <text x="260" y="198" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="11">动力</text>
+          <text x="360" y="198" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="11">货物</text>
+          <text x="235" y="62" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="11">船桥</text>
+          <path class="wave" d="M0 260 Q65 240 130 260 T260 260 T390 260 T520 260 V300 H0 Z" fill="rgba(62,207,190,0.2)"/>
+        </svg>
+        <div class="lesson" id="home-lesson" style="margin-top:0.8rem;min-height:auto;background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.12);color:#dff7f3"></div>
+      </div>
+    </div>
+
+    <div class="lessons-bank" style="display:none">
+      <div id="H1"><h3 style="color:#fff;margin:0 0 0.4rem;font-size:1rem">船体与结构</h3><p style="margin:0;color:rgba(255,255,255,0.75);font-size:0.9rem">提供浮力、强度与内部空间，是一切系统的载体。</p></div>
+      <div id="H2"><h3 style="color:#fff;margin:0 0 0.4rem;font-size:1rem">动力系统</h3><p style="margin:0;color:rgba(255,255,255,0.75);font-size:0.9rem">主机、轴系、螺旋桨与舵，决定航速与机动性。</p></div>
+      <div id="H3"><h3 style="color:#fff;margin:0 0 0.4rem;font-size:1rem">货物系统</h3><p style="margin:0;color:rgba(255,255,255,0.75);font-size:0.9rem">箱、油、气、矿、车……船型差异首先体现在这里。</p></div>
+      <div id="H4"><h3 style="color:#fff;margin:0 0 0.4rem;font-size:1rem">导航与船桥</h3><p style="margin:0;color:rgba(255,255,255,0.75);font-size:0.9rem">雷达、海图、通信与决策中枢所在。</p></div>
+    </div>
+  </header>
+
+  <section class="section wrap">
+    <div class="section-head reveal">
+      <h2>六条航线，任选入口</h2>
+      <p>每条航线都有图示、步进或对照交互。建议从「船舶与产业」按顺序走完，也可按兴趣跳读。</p>
+    </div>
+    <div class="portals">
+      <a class="portal reveal" href="ship.html">
+        <div class="ico">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 16l9-4 9 4-9 5-9-5z" stroke="#1f8a7c" stroke-width="1.6"/><path d="M12 4v8" stroke="#b8923f" stroke-width="1.6"/></svg>
+        </div>
+        <div class="num">01</div>
+        <h3>船舶与产业</h3>
+        <p>船身热点拆解八大系统；上中下游可步进切换。</p>
+        <span class="go">进入 →</span>
+      </a>
+      <a class="portal reveal" href="software.html">
+        <div class="ico">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="4" rx="1" stroke="#1f8a7c" stroke-width="1.6"/><rect x="4" y="10" width="16" height="4" rx="1" stroke="#1f8a7c" stroke-width="1.6"/><rect x="4" y="16" width="16" height="4" rx="1" stroke="#b8923f" stroke-width="1.6"/></svg>
+        </div>
+        <div class="num">02</div>
+        <h3>软件与规则</h3>
+        <p>六层软件像地层一样叠起来点；船级社一表看清。</p>
+        <span class="go">进入 →</span>
+      </a>
+      <a class="portal reveal" href="challenges.html">
+        <div class="ico">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3l8 5v8l-8 5-8-5V8l8-5z" stroke="#1f8a7c" stroke-width="1.6"/><path d="M12 8v5" stroke="#c45c3e" stroke-width="1.8"/><circle cx="12" cy="16" r="1" fill="#c45c3e"/></svg>
+        </div>
+        <div class="num">03</div>
+        <h3>卡点与政策</h3>
+        <p>卡脖子条目可点选展开；四条政策主线横向切换。</p>
+        <span class="go">进入 →</span>
+      </a>
+      <a class="portal reveal" href="smart.html">
+        <div class="ico">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="#1f8a7c" stroke-width="1.6"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" stroke="#b8923f" stroke-width="1.4"/></svg>
+        </div>
+        <div class="num">04</div>
+        <h3>智能与绿色</h3>
+        <p>能力地图点选；燃料路线带「成熟度」条。</p>
+        <span class="go">进入 →</span>
+      </a>
+      <a class="portal reveal" href="market.html">
+        <div class="ico">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 18V8l8-4 8 4v10" stroke="#1f8a7c" stroke-width="1.6"/><path d="M9 18v-5h6v5" stroke="#b8923f" stroke-width="1.6"/></svg>
+        </div>
+        <div class="num">05</div>
+        <h3>供应商与空白</h3>
+        <p>国内外对照面板；空白用标签组切换细读。</p>
+        <span class="go">进入 →</span>
+      </a>
+      <a class="portal reveal" href="future.html">
+        <div class="ico">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 19l4-8 3 4 3-6 4 10H5z" stroke="#1f8a7c" stroke-width="1.6"/><circle cx="17" cy="6" r="2" stroke="#b8923f" stroke-width="1.5"/></svg>
+        </div>
+        <div class="num">06</div>
+        <h3>人才 · 未来</h3>
+        <p>人才画像与 18 个潜力方向，分组标签浏览。</p>
+        <span class="go">进入 →</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="float-tip">试试首页船身上的发光圆点 ↓</div>
+  <footer class="site wrap">船舶全景 · 互动探索版 · 旧版链接保持不变</footer>
+  <script src="js/explore.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>智能与绿色 · 互动探索</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/explore.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">船舶<em>探索</em></a>
+      <a class="chip" href="index.html">首页</a>
+      <a class="chip" href="ship.html">船舶与产业</a>
+      <a class="chip" href="software.html">软件与规则</a>
+      <a class="chip" href="challenges.html">卡点与政策</a>
+      <a class="chip" href="smart.html">智能与绿色</a>
+      <a class="chip" href="market.html">供应商与空白</a>
+      <a class="chip" href="future.html">人才·未来</a>
+    </div>
+    <div class="progress"><i></i></div>
+  </nav>
+
+  <header class="page-hero wrap">
+    <div class="eyebrow">04 · 智能与绿色</div>
+    <h1>能力地图点选，燃料成熟度一眼看懂</h1>
+    <p class="lead">智能可用感知—连接—分析—决策—执行理解；绿色则是 LNG、甲醇、氨、氢与电池等多条路线并行。</p>
+  </header>
+
+  <section class="section wrap">
+    <div class="section-head reveal"><h2>智能能力地图</h2><p>点选能力卡，右侧读详细说明。</p></div>
+    <div class="ship-board reveal">
+      <div class="pick-grid" data-select="#smart-out">
+        <button class="pick" data-lesson="M1"><strong>1. 感知</strong><span>状态可知</span></button>
+        <button class="pick" data-lesson="M2"><strong>2. 连接</strong><span>设备互通</span></button>
+        <button class="pick" data-lesson="M3"><strong>3. 分析</strong><span>趋势预警</span></button>
+        <button class="pick" data-lesson="M4"><strong>4. 预测维护</strong><span>靠港前安排</span></button>
+        <button class="pick" data-lesson="M5"><strong>5. 航线航速</strong><span>节油与准时</span></button>
+        <button class="pick" data-lesson="M6"><strong>6. 智能配载</strong><span>稳性与作业</span></button>
+        <button class="pick" data-lesson="M7"><strong>7. 智能船桥</strong><span>辅助驾驶</span></button>
+        <button class="pick" data-lesson="M8"><strong>8. 靠泊 / DP</strong><span>精准机动</span></button>
+        <button class="pick" data-lesson="M9"><strong>9–11. 协同安全孪生</strong><span>船岸 · 网络 · 孪生</span></button>
+      </div>
+      <div class="lesson" id="smart-out"></div>
+    </div>
+  </section>
+  <div class="lessons-bank" style="display:none">
+    <div id="M1"><h3>感知</h3><p>系统采集主机温度、油压、燃油流量、振动、轴系、发电机负荷、船体应力、舵角、航速、风浪、吃水与货舱状态等。传感器变多不等于智能——关键是准确、连续、可追溯，断网时还能工作。</p></div>
+    <div id="M2"><h3>连接</h3><p>发动机、配电、导航、泵阀与安全系统常来自不同厂商。需要统一接口与通信网络，兼顾实时性、冗余与网络安全，避免「一堆孤立仪表」。</p></div>
+    <div id="M3"><h3>分析</h3><p>不止阈值报警，还看振动是否持续升高、轴承温度缓慢爬升、油耗偏离基线、发电机效率下降等，在彻底故障前发现风险。</p></div>
+    <div id="M4"><h3>预测性维护</h3><p>根据状态判断剩余寿命与故障概率，建议靠港时检查，减少非计划停航与备件库存。现实挑战是严重故障样本少、工况差异大，许多产品仍停在看板与阈值报警。</p></div>
+    <div id="M5"><h3>航线与速度优化</h3><p>综合天气、海况、港口窗口与交付要求，在到港时间、燃料成本、天气风险与港口等待之间找平衡。</p></div>
+    <div id="M6"><h3>智能配载</h3><p>集装箱船要考虑重量、强度、稳性、危险品隔离、卸货顺序与港口效率。系统快速验算，减少人工试错。</p></div>
+    <div id="M7"><h3>智能船桥</h3><p>融合雷达、海图、AIS、视觉、定位与气象，提供航迹、碰撞预警与靠泊建议。多数仍是辅助，最终决策通常在船员。</p></div>
+    <div id="M8"><h3>自动靠泊与动力定位</h3><p>靠泊系统控制推进器与舵机平稳靠泊；DP 用多推进器维持位置，常用于钻井、风电安装、海底施工与科考。</p></div>
+    <div id="M9"><h3>船岸协同 · 网络安全 · 数字孪生</h3><p>岸基远程分析机况、更新航线、安排维修，须具备边缘计算与离线能力。网络安全覆盖通信、身份、分区、审计、补丁与断网应急。数字孪生应能回答状态、油耗、寿命与改造影响。</p></div>
+  </div>
+
+  <section class="section wrap">
+    <div class="section-head reveal"><h2>绿色燃料路线 · 成熟度条</h2><p>切换燃料，看说明与相对成熟度（示意，非绝对排名）。</p></div>
+    <div class="panel reveal" data-tabs>
+      <div class="route-rail">
+        <button class="route-pill active" data-tab="lng" data-level="85">LNG</button>
+        <button class="route-pill" data-tab="meoh" data-level="60">甲醇</button>
+        <button class="route-pill" data-tab="nh3" data-level="35">氨</button>
+        <button class="route-pill" data-tab="h2" data-level="25">氢</button>
+        <button class="route-pill" data-tab="bat" data-level="70">电池/混动</button>
+      </div>
+      <div class="meter"><i data-meter style="width:85%"></i></div>
+      <div class="meter-labels"><span>探索 / 示范</span><span>规模应用成熟度 →</span></div>
+      <div class="prose" data-panel="lng" style="margin-top:1rem">
+        <h3>LNG</h3>
+        <p>技术较成熟，可降低硫氧化物与部分氮氧化物，但需低温储罐与专用加注，并关注甲烷逃逸。常被视作绿色转型的过渡主力之一。</p>
+      </div>
+      <div class="prose" data-panel="meoh" hidden style="margin-top:1rem">
+        <h3>甲醇</h3>
+        <p>常温液体，储存加注相对容易，改造难度低于氢和氨。能量密度较低需更大燃料舱；绿色甲醇供应仍有限。</p>
+      </div>
+      <div class="prose" data-panel="nh3" hidden style="margin-top:1rem">
+        <h3>氨</h3>
+        <p>燃烧不直接产 CO₂，远洋重要候选。有毒易泄漏，燃烧稳定性、氮氧化物与安全隔离仍需攻关，相关安全软件需求长期存在。</p>
+      </div>
+      <div class="prose" data-panel="h2" hidden style="margin-top:1rem">
+        <h3>氢</h3>
+        <p>适合燃料电池与短途。储存、运输、加注难，体积能量密度低，目前还不适合大规模远洋。</p>
+      </div>
+      <div class="prose" data-panel="bat" hidden style="margin-top:1rem">
+        <h3>电池与混合动力</h3>
+        <p>适合短途客渡、港口与内河。远洋能量需求大，多采用混合动力或多燃料；与高频靠港、岸电条件好的航线更匹配。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap pager">
+    <a href="challenges.html"><b>上一页</b>← 卡点与政策</a>
+    <a href="market.html"><b>下一页</b>供应商与空白 →</a>
+  </div>
+  <footer class="site wrap">互动探索版 · 智能与绿色</footer>
+  <script src="js/explore.js"></script>
+</body>
+</html>
