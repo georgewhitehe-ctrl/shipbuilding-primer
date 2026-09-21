@@ -50,6 +50,6 @@
 
   // Load semantic media after the document exists so long research pages stay readable.
   var mediaScript = document.createElement("script");
-  mediaScript.src = "js/media-inserts.js?v=20260921g";
+  mediaScript.src = "js/media-inserts.js?v=20260921h";
   document.body.appendChild(mediaScript);
 })();
