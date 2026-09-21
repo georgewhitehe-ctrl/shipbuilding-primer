@@ -109,7 +109,7 @@
 
       <h2 id="s8">二、工艺编制与制造可执行性</h2>
       <h3 id="s81">2.1 内孔优先原则</h3>
-      <figure class="media-block"><img src="assets/nesting/cnc-panels.jpeg" alt="数控设备切割带内��的板材零件"><figcaption><strong>内孔先于外轮廓</strong>先加工孔与槽，可避免零件外轮廓切断后发生位移，影响内部特征精度。</figcaption></figure>
+      <figure class="media-block"><img src="assets/nesting/cnc-panels.jpeg" alt="数控设备切割带内孔的板材零件"><figcaption><strong>内孔先于外轮廓</strong>先加工孔与槽，可避免零件外轮廓切断后发生位移，影响内部特征精度。</figcaption></figure>
       <p>零件仍与母板连接时结构稳定，适合先切内孔。若先切外轮廓，零件可能发生位移、翘曲或倾斜，随后加工内孔时尺寸精度和安全性会下降。</p>
       <p>因此，常见顺序为：标记和划线 → 小内孔 → 大内孔 → 内部开口 → 坡口 → 外轮廓 → 桥接点处理。顺序仍需根据设备和零件结构调整。</p>
 
@@ -133,6 +133,7 @@
       <p>其中 \(N_b\) 为桥接数量，\(c_b\) 为单个桥接的去除和打磨成本。</p>
 
       <h3 id="s86">2.6 热变形控制</h3>
+      <figure class="media-block reverse"><figcaption><strong>热输入影响后续装配</strong>切割与焊接都会引入局部热变形，路径顺序应避免在薄弱区域连续集中加工。</figcaption><img src="assets/nesting/grinding-hull.jpeg" alt="工人在船体外板上进行热作业"></figure>
       <p>连续切割相邻区域会造成热量集中。板材局部膨胀和收缩后，可能出现翘曲、尺寸偏差和割缝闭合。软件可以采用以下策略：跳跃切割，分散连续热输入；先切小孔，再切大轮廓；对称切割；在相邻零件之间交替加工；限制同一区域单位时间内的切割长度；对长条零件保留临时桥接；根据温度或历史数据调整等待时间。</p>
       <p>热风险可以用简化指标估计：</p>
       <p>\[ H=\sum_{a,b}\frac{L_aL_b}{d_{ab}+\varepsilon}\exp\left(-\frac{|t_a-t_b|}{\tau}\right) \]</p>
@@ -152,6 +153,8 @@
       <p>后处理器错误可能导致轨迹偏移、速度异常、坡口轴超限或设备无法执行。因此，每个后处理器都要经过仿真、空运行、试切和版本管理。</p>
 
       <h3 id="s93">3.3 从「生成 NC」到「稳定加工」</h3>
+      <figure class="media-block"><img src="assets/nesting/rack-pinion.jpeg" alt="数控切割设备的运动机构与切割床"><figcaption><strong>运动系统决定执行精度</strong>齿轮齿条、加速度和设备刚性会影响拐角、圆孔与高速路径的实际加工质量。</figcaption></figure>
+      <figure class="media-block reverse"><figcaption><strong>不同设备需要不同参数</strong>等离子与激光设备在割缝、穿孔、速度和热影响上差异明显，后处理不能只替换代码格式。</figcaption><img src="assets/nesting/plasma-torchmate.jpeg" alt="Torchmate 数控等离子切割设备"></figure>
       <p>软件能够生成 NC 文件，仅说明格式基本可读。稳定加工还需要满足：轨迹没有越界；轴运动可达；切割头不碰撞；穿孔参数适合板厚；转角速度合理；坡口姿态没有超限；程序暂停和恢复安全；设备实际加工效果满足质量要求。</p>
       <div class="callout">项目需要建设设备联调平台，并维护「软件版本—后处理器版本—设备型号—控制器版本」的兼容关系。</div>
 
