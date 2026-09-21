@@ -51,6 +51,7 @@
 
       <h2 id="s10">一、数据主线与系统集成</h2>
       <h3 id="s101">1.1 为什么需要唯一编码</h3>
+      <figure class="media-block"><img src="assets/nesting/aluminium-panels.jpeg" alt="铝板零件在车间中等待加工"><figcaption><strong>编码贯穿实物</strong>板材切割、分拣和装配后，仍应追溯到设计版本、材料批次与套料任务。</figcaption></figure>
       <p>同一个零件可能在设计系统中有设计编号，在 ERP 中有物料编码，在 MES 中有工单编号，在套料软件中又生成内部编号。若这些编号没有建立稳定映射，质量问题发生后就很难追溯。</p>
       <p>建议建立全局唯一标识，并保存不同业务编码之间的关系：</p>
       <div class="table-wrap"><table>
@@ -68,6 +69,7 @@
       </table></div>
 
       <h3 id="s102">1.2 设计变更传播</h3>
+      <figure class="media-block reverse"><figcaption><strong>现场反馈进入数据主线</strong>船体内部的焊接与装配记录可反向验证零件版本、加工质量和工艺路线。</figcaption><img src="assets/nesting/hull-inside.jpeg" alt="船体内部骨架与焊接作业"></figure>
       <p>假设设计人员将零件 A 的孔径从 100 毫米改为 120 毫米。系统应自动完成影响分析：</p>
       <pre>零件 A 版本变化
 → 查询 A 所在的套料方案
